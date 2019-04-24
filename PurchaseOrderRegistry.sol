@@ -27,7 +27,7 @@ contract  PurchaseOrderRegistry{
     }
     
 
-    function getAllPOS(address _manufacturer_address) public view returns (uint256 []) {
+    function getAllPOS(address _manufacturer_address) public view returns (uint256 [] memory) {
         uint256[] memory poNumbers = new uint256[](purchaseOrders.length);
         
         for (uint i = 0; i < purchaseOrders.length; i++) {
